@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -9,100 +10,107 @@ body {
   font-family: "DM Sans", sans-serif;
 }
 
+/*Cabeçalho*/
 header {
-  display: flex;
-  justify-content: space-between;
-  margin: 20px 60px 20px 60px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid rgb(183, 34, 252);
+  display: flex; /* Alinhar h2 e nav */
+  justify-content: space-between; /* Espaço entre h2 e nav */
+  margin: 20px 60px 20px 60px; /* Margens: top 20, right 60, buttom 20, left 60 */
+  padding-bottom: 20px; /* Padding abaixo do conteúdo */
+  border-bottom: 1px solid rgb(183, 34, 252); /* linha divisória */
+  /* Navegação Início */
 }
 header h2 {
-  color: rgb(183, 34, 252);
+  color: rgb(183, 34, 252); /* Cor de fonte */
 }
 header nav ul {
-  display: flex;
-  gap: 25px;
-  align-items: center;
-  list-style: none;
+  display: flex; /* Alinhar conteúdo de navegação */
+  gap: 25px; /* Espaçamento entre cada opção */
+  align-items: center; /* Alinhamento dos itens*/
+  list-style: none; /* Remove o marcador de lista */
 }
 header nav ul li a {
-  color: white;
-  text-decoration: none;
+  color: white; /* Cor da fonte */
+  text-decoration: none; /* Remover decoração da lista */
 }
 header nav ul li a svg {
-  margin-top: 5px;
+  margin-top: 5px; /* Margem superior para os ícones */
 }
 
+/* Corpo do Portfólio */
 main {
-  color: white;
+  color: white; /* Cor de fonte */
+  /* Apresentação */
+  /* Habilidades */
+  /* Projetos */
 }
 main .presentation article {
-  /*border: 1px solid red;*/
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-  margin: 90px 60px 60px 90px;
+  display: flex; /* Alinhar conteúdos do article (h1, p, img) */
+  justify-content: center; /* Espaço entre o conteúdo do article */
+  align-items: center; /* Alinhamento do conteúdo */
+  gap: 40px; /* Espaçamento entre h1 e img */
+  margin: 90px 60px 60px 90px; /* Margem do conteúdo article com a página */
 }
 main .presentation article p {
-  width: 500px;
-  font-size: 60px;
-  color: rgb(183, 34, 252);
+  width: 500px; /* Tamanho do espaço que contém o h1 e p */
+  font-size: 60px; /* Tamanho de fonte */
+  color: rgb(183, 34, 252); /* Cor de fonte */
 }
 main .presentation article img {
-  border-radius: 100px;
+  border-radius: 100px; /* Imagem redonda */
+  /* Cor da borda da imagem */
   border-top: 3px solid #6246ff;
   border-left: 3px solid #6246ff;
   border-right: 3px solid rgb(183, 34, 252);
   border-bottom: 3px solid rgb(183, 34, 252);
 }
 main .skills {
-  margin-top: 130px;
+  margin-top: 130px; /* Espaçamento de margem acima do conteúdo */
 }
 main .skills h2 {
-  font-size: 28px;
+  font-size: 28px; /* Tamanho de fonte */
 }
 main .skills h2, main .skills p {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 10px;
+  display: flex; /* Alinhar conteúdos h2 e p */
+  justify-content: center; /* Espaço igual entre h2 e p*/
+  margin-bottom: 10px; /* Margem abaixo do conteúdo */
 }
 main .skills ul {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-  list-style: none;
-  gap: 35px;
+  display: flex; /* Alinhar conteúdo da lista não ordenada */
+  justify-content: center; /* Espaço igual entre o conteúdo da lista não ordenada */
+  margin-top: 50px; /* Margem acima do conteúdo */
+  list-style: none; /* Remove o marcador de lista */
+  gap: 35px; /* Espaçamento entre conteúdo da lista */
 }
 main .projects {
-  margin: 130px 50px 130px 50px;
+  margin: 130px 60px 130px 60px; /* Margens: top 130, right 60, buttom 130, left 60 */
 }
 main h2 {
-  font-size: 28px;
+  font-size: 28px; /* Tamanho de fonte */
 }
 main h2, main p {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 10px;
+  display: flex; /* Alinhar conteúdo de h2 e p */
+  justify-content: center; /* Espaço igual entre h2 e p*/
+  margin-bottom: 10px; /* Margem abaixo do conteúdo */
 }
 main .list-projects {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
-  margin-top: 50px;
+  display: grid; /* definir o elemento como um container de grid*/
+  grid-template-columns: 1fr 1fr 1fr; /* definir o número e a largura das colunas*/
+  gap: 20px; /* Espaçamento entre os projetos */
+  margin-top: 50px; /* Margem acima dos projetos */
 }
 main .list-projects .body-projects {
-  background-color: #363636;
-  border-radius: 30px;
+  background-color: #363636; /* Cor de fundo */
+  border-radius: 30px; /* Arredondamento das bordas dos projetos */
+  /* Cores da borda dos projetos */
   border-top: 2px solid #6246ff;
   border-left: 2px solid #6246ff;
   border-right: 2px solid rgb(183, 34, 252);
   border-bottom: 2px solid rgb(183, 34, 252);
-  width: 350px;
+  width: 350px; /* Tamanho da área dos projetos*/
 }
 main .list-projects .body-projects .imagem {
-  border-radius: 30px 30px 0 0;
-  width: 346px;
+  border-radius: 30px 30px 0 0; /* Arredondamento das bordas superiores dos projetos */
+  width: 346px; /* Tamanho das imagens */
 }
 main .list-projects .body-projects .description {
   display: flex;
