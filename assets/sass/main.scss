@@ -40,7 +40,7 @@ main{
         }
         ul {
            display: flex; /* Alinhar conteúdo da lista não ordenada */
-           justify-content: center; /* Espaço igual entre o conteúdo da lista não ordenada */
+           justify-content: center; /* Espaço centralizado entre o conteúdo da lista não ordenada */
            margin-top: 50px; /* Margem acima do conteúdo */
            list-style: none; /* Remove o marcador de lista */
            gap: 35px; /* Espaçamento entre conteúdo da lista */
@@ -58,7 +58,7 @@ main{
 
         h2, p {
             display: flex; /* Alinhar conteúdo de h2 e p */
-            justify-content: center; /* Espaço igual entre h2 e p*/
+            justify-content: center; /* conteúdo no centro (h2 e p) */
             margin-bottom: 10px; /* Margem abaixo do conteúdo */
         }
         
@@ -84,46 +84,46 @@ main{
                 }
 
                 .description{
-                    display: flex;
-                    flex-direction: column;
-                    margin: 5px 15px 5px 15px;
+                    display: flex; /* Alinhar conteúdo h3, p e class tools */
+                    flex-direction: column; /* alinhar em colunas */
+                    margin: 5px 15px 5px 15px; /* margens da área de descrição */
 
                     h3{
-                        padding-bottom: 15px;
+                        margin-bottom: 10px; /* margem abaixo do título h3*/
                     }
 
                     p{
-                        font-size: 13px;
-                        padding-bottom: 15px;
+                        font-size: 13px; /* tamanho de fonte */
+                        padding-bottom: 15px; /* espaçamento dentro de p*/
                     }
                     .tools{
-                        justify-content: left;
-                        font-size: 13px;
+                        justify-content: left; /* alinhar conteúdo a esquerda */
+                        font-size: 13px; /* tamanho de fonte */
                     }
                 }
 
                 .links{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    gap: 10px;
+                    display: flex; /* Alinhar links*/
+                    justify-content: center; /* alinhar conteúdos ao centro  */
+                    align-items: center; /* centralizar conteúdo ao centro */
+                    gap: 10px; /* espaçamento entre os links */
 
                     button{
-                        padding: 10px 20px;
-                        margin-bottom: 20px;
-                        background-color: rgb(255, 255, 255);
-                        border: none;
-                        border-radius: 20px;
+                        padding: 10px 20px; /* espaçamento dentro do botão */
+                        margin-bottom: 20px; /* margem abaixo do botão*/
+                        background-color: rgb(255, 255, 255); /* cor de fundo do botão */
+                        border: none; /* remover borda do botão */
+                        border-radius: 20px; /* arredondamento do botão */
 
                     }
 
                     button:hover{
-                        background-color: rgb(213, 168, 255);
+                        background-color: rgb(213, 168, 255); /* cor de fundo do botão ao passar o mouse */
                     }
                     a{ 
-                        font-size: 15px;
-                        text-decoration: none;
-                        color: black;
+                        font-size: 15px; /* tamanho do texto */
+                        text-decoration: none; /* remover decoração de texto */
+                        color: black; /* cor de fonte */
                     }
                 }
 
