@@ -5,7 +5,8 @@ header{
     margin: 20px 60px 20px 60px; /* Margens: top 20, right 60, buttom 20, left 60 */
     padding-bottom: 20px; /* Padding abaixo do conteúdo */
     border-bottom: 1px solid rgb(183, 34, 252); /* linha divisória */
-    h2{
+    
+    #logo{
         color: rgb(183, 34, 252); /* Cor de fonte */
     }
 
@@ -28,6 +29,7 @@ header{
         }
     }
 
+
     #menu {
         z-index: 2;
       }
@@ -35,7 +37,7 @@ header{
       #menu-bar {
         width: 45px;
         height: 40px;
-        margin: 30px 0 20px 20px;
+        margin: 10px 0 20px 20px;
         cursor: pointer;
         
         .bar {
@@ -61,13 +63,12 @@ header{
         display: none;
         
         ul {
-          padding: 0 22px;
+          padding: 0 10px;
           flex-direction: column;
           
           li {
             list-style: none;
-            
-            
+
             a {
               color: white;
               font-size: 20px;

@@ -10,11 +10,12 @@ main{
             align-items: center; /* Alinhamento do conteúdo */
             gap: 40px; /* Espaçamento entre h1 e img */
             margin: 90px 60px 60px 90px; /* Margem do conteúdo article com a página */
+
             p{
-                width: 500px; /* Tamanho do espaço que contém o h1 e p */
                 font-size: 60px; /* Tamanho de fonte */
                 color: rgb(183, 34, 252); /* Cor de fonte */
             }
+
             img {
                 border-radius: 100px; /* Imagem redonda */
                 /* Cor da borda da imagem */
@@ -33,11 +34,13 @@ main{
         h2{ 
             font-size: 28px; /* Tamanho de fonte */
         }
+
         h2, p {
             display: flex; /* Alinhar conteúdos h2 e p */
             justify-content: center; /* Espaço igual entre h2 e p*/
             margin-bottom: 10px; /* Margem abaixo do conteúdo */
         }
+
         ul {
            display: flex; /* Alinhar conteúdo da lista não ordenada */
            justify-content: center; /* Espaço centralizado entre o conteúdo da lista não ordenada */
@@ -96,6 +99,7 @@ main{
                         font-size: 13px; /* tamanho de fonte */
                         padding-bottom: 15px; /* espaçamento dentro de p*/
                     }
+
                     .tools{
                         justify-content: left; /* alinhar conteúdo a esquerda */
                         font-size: 13px; /* tamanho de fonte */

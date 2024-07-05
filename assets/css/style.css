@@ -19,7 +19,7 @@ header {
   border-bottom: 1px solid rgb(183, 34, 252); /* linha divisória */
   /* Navegação Início */
 }
-header h2 {
+header #logo {
   color: rgb(183, 34, 252); /* Cor de fonte */
 }
 header nav ul {
@@ -41,7 +41,7 @@ header #menu {
 header #menu-bar {
   width: 45px;
   height: 40px;
-  margin: 30px 0 20px 20px;
+  margin: 10px 0 20px 20px;
   cursor: pointer;
 }
 header #menu-bar .bar {
@@ -63,7 +63,7 @@ header .nav {
   display: none;
 }
 header .nav ul {
-  padding: 0 22px;
+  padding: 0 10px;
   flex-direction: column;
 }
 header .nav ul li {
@@ -128,7 +128,6 @@ main .presentation article {
   margin: 90px 60px 60px 90px; /* Margem do conteúdo article com a página */
 }
 main .presentation article p {
-  width: 500px; /* Tamanho do espaço que contém o h1 e p */
   font-size: 60px; /* Tamanho de fonte */
   color: rgb(183, 34, 252); /* Cor de fonte */
 }
@@ -269,17 +268,102 @@ main .list-projects .body-projects .links a {
   text-decoration: none; /* remover decoração do texto */
 }
 
-@media screen and (max-width: 1024px) and (min-width: 900px) {
+@media screen and (max-width: 2000px) {
   #menu {
     display: none;
   }
 }
-@media screen and (max-width: 899px) and (min-width: 600px) {
+@media screen and (max-width: 1170px) and (min-width: 900px) {
+  #menu {
+    display: none;
+  }
+  #proj .list-projects {
+    display: grid; /* definir o elemento como um container de grid*/
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+  }
+}
+@media screen and (max-width: 899px) {
+  #logo {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 70%;
+  }
   #menu-cheio {
     display: none;
   }
   #menu {
     display: block;
+    padding-left: 4%;
+  }
+  main #proj .sub-proj {
+    text-align: center;
+  }
+  main #proj .list-projects {
+    display: grid; /* definir o elemento como um container de grid*/
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 852px) and (min-width: 818px) {
+  #logo {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 68%;
+  }
+  #about h1 p {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 817px) and (min-width: 450px) {
+  #logo {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 60%;
+  }
+  #menu {
+    display: block;
+    padding-left: 10%;
+    padding-top: 7%;
+  }
+  main #about p {
+    font-size: 20px;
+  }
+  main #about img {
+    width: 200px;
+  }
+  main #work-tools p {
+    font-size: 15px;
+  }
+  main #work-tools ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    margin: 10% 25% 0 25%;
+  }
+  main #proj h2 p {
+    text-align: center;
+    font-size: 15px;
+  }
+  main #proj .list-projects {
+    display: grid; /* definir o elemento como um container de grid*/
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+  footer .info-footer {
+    display: block;
+    flex-direction: column;
+  }
+  footer .info-footer ul {
+    display: flex;
+    align-items: center;
+  }
+  footer .footer-nav {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .footer-nav p {
+    font-size: 15px;
   }
 }
 
