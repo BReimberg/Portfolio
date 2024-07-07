@@ -555,8 +555,7 @@ main .list-projects .body-projects .links a {
   #proj .list-projects {
     display: flex;
     flex-direction: column;
-    margin-left: -17%;
-    margin-right: 10%;
+    margin-left: -13%;
   }
   footer .info-footer,
   footer .footer-nav {
