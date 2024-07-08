@@ -1,10 +1,7 @@
 # Portfólio | Front-end
 
 ### Objetivo:
-Aplicar conhecimentos Front-end para divulgação de serviço.
+Aplicar conhecimentos Front-end para criação de portifólio.
 
 ### Tecnologias:
-Inicialmente foram utilizados somente HTML, Sass e layout do [Figma](https://www.figma.com/community/file/1116246660507537002) para inspiração do portfólio.
-
-### Observações:
-O projeto ainda está em andamento. O próximo passo será colocar interação com JavaScript. E por fim, tornar o portfólio responsivo.
+Inicialmente foram utilizados HTML, Sass, JavaScript. O layout do [Figma](https://www.figma.com/community/file/1116246660507537002) serviu de inspiração do portfólio.
